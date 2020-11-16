@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+span.square {
+    display: inline-block;
+}
+
+span.square:hover, span.square *:hover {
+    cursor: pointer;
+}
+
+.human-player {
+    outline: 3px solid black;
+    outline-offset: -3px;
+}
+
+.computer-player {
+    outline: 3px solid white;
+    outline-offset: -3px;
+}
