@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    const totalRows = 4;
-    const totalCols = 7;
+    const totalRows = 3;
+    const totalCols = 3;
     const totalSquares = totalRows * totalCols;
 
     createBoard();
@@ -141,3 +141,133 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="gameboard.css">
+
+    <title>Tic-Tac-Toe</title>
+
+</head>
+<body>
+    <div class="container justify-content-center">
+        <h1>Tic-Tac-Toe</h1>
+
+        <div class="row">
+            <div class="col" id="board">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="gameboard.js"></script>
+</body>
+</html>
+
+
+===================================================
+
+body {
+    text-align: center;
+}
+
+span.square {
+    display: inline-block;
+}
+
+span.square:hover, span.square *:hover {
+    cursor: pointer;
+}
+
+.human-player {
+    outline: 3px solid black;
+    outline-offset: -3px;
+}
+
+.computer-player {
+    outline: 3px solid white;
+    outline-offset: -3px;
+}
+
+
+ // give the square a random color...
+                // var red, green, blue, luma;
+                // do {
+                //     red = randomColorValue();
+                //     green = randomColorValue();
+                //     blue = randomColorValue();
+                //     // ...but not too dark
+                //     // See https://stackoverflow.com/questions/596216/formula-to-determine-brightness-of-rgb-color
+                //  //   luma = 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+                //     luma = 0.3126 * red + 0.8152 * green + 0.1722 * blue;
+              //  } while  (luma < 20);  //128
+
+               // square.css("background-color", `rgb(${red}, ${green}, ${blue})`);
+
+
+               ============================
+
+
+                 <p id="taken"></p>
+
+                    $("#taken").text("It was already taken!");
+
+                    ----------------------
+if(humanCount === 15) humanCount = "A";
+            if(humanCount === 18) humanCount = "B";
+            if(humanCount === 21) humanCount = "C";
+            if(humanCount === 20) humanCount = "D";
+            if(humanCount === 24) humanCount = "E";
+            if(humanCount === 28) humanCount = "F";
+            if(humanCount === 25) humanCount = "G";
+            if(humanCount === 30) humanCount = "H";
+            if(humanCount === 35) humanCount = "I";
+
+
+              <p id="countFive"></p>
+                    <p id="countNine"></p>
+
+        if(win5%2 === 0){
+                $("#taken").hide();
+            }
+            else{
+                $("#taken").text("It was already taken!").show();
+            }
+
+ $("#rules").text("Play will alternate between the human player and an automated computer player."+<br>+
+        "The computer player does not have to play intelligently; it may guess randomly."+<br>+
+        "The human player's marker is human The player makes a move by clicking on an open"+<br>+
+        "square. An image of an human should be placed in the square."+<br>+
+        "Ensure that the human player can't cheat and choose a square that already"+<br>+
+        "contains a marker (either an human or an PC). If they do, display a warning"+<br>+
+        "and let them choose another square. The computer player's marker is PC."+<br>+
+        "The computer makes a move by generating a random number between 1 and 9."+<br>+
+        "Check if the space is open (has neither an human nor PC). If it is not,"+<br>+
+        "generate a new random number until a valid position is found. You will"+<br>+
+        "probably need a loop to accomplish this. Once a valid number is generated,"+<br>+
+        "place an image of an PC in that square. After each player's turn (both human and computer),"+<br>+
+        "check if the game has ended in a win or draw. There are 8 different ways to win by having"+<br>+
+        "three of your markers in a row horizontally, vertically, or diagonally."+<br>);
+
+
